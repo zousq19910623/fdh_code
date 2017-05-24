@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+		<!-- build:css css/postdetail.min.css -->
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/detaillike.css"/>
+		<!-- endbuild -->
+		<title>喜欢列表</title>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav mui-badge-primary">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">喜欢列表</h1>
+		</header>
+		<!--下拉加载容器-->
+	    <!--数据列表-->
+	    <div id="pullrefresh" class="mui-content mui-scroll-wrapper">
+			<div class="mui-scroll">
+		        <ul id="likeList" class="mui-table-view mui-table-view-chevron">
+		      		<!--<li class="mui-table-view-cell like-item">
+						<img src="images/touxiang02.jpg" />
+						<a>火焰人生</a>
+					</li>
+					<li class="mui-table-view-cell like-item">
+						<img src="images/touxiang03.jpg" />
+						<a>王蓝莓</a>
+					</li>
+					<li class="mui-table-view-cell like-item">
+						<img src="images/touxiang02.jpg" />
+						<a>今夜&无人</a>
+					</li>
+					<li class="mui-table-view-cell like-item">
+						<img src="images/touxiang02.jpg" />
+						<a>火焰人生</a>
+					</li>
+					<li class="mui-table-view-cell like-item">
+						<img src="images/touxiang01.jpg" />
+						<a>王蓝莓</a>
+					</li>-->
+		        </ul>
+			</div>
+		</div>
+	</body>
+	
+	<script src="http://cdn.bootcss.com/seajs/3.0.2/sea.js"></script>
+	<script src="lib/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		
+		
+		
+		seajs.config({
+			base: "./",
+			alias: {
+				//"lineChart": "lineChart.js"
+			}
+		});
+		/**
+		 *加载入口模块
+		 */
+		seajs.use("src/detaillike");
+	</script>
+</html>

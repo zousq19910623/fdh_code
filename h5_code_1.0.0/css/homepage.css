@@ -1,0 +1,46 @@
+.homepage_head{position:relative;width:100%;  height:118px;background: #5687E7;box-shadow: 0 0 0 0 #D9D9D9;}
+.homepage_head_img{position:absolute; left:2%; top:10px;width:64px;height:64px;border-radius: 64px;}
+.homepage_head_span1{position:absolute; left:86px; top:10px;  width:52%;font-size: 16px;
+color: #FFFFFF;white-space: nowrap;overflow: hidden;
+		text-overflow: ellipsis;}
+		
+.homepage_head_span2_1{display:inline-block; position:absolute; left:86px; top:36px;  font-size: 12px;
+color: #FFFFFF; width:43px;padding-left:14px; line-height:  14px; height:14px;background: #FF9797;border-radius: 1.2px;}
+.homepage_head_span2_1 img{position:absolute;left:4px; top:3px;height:8px; background-size: cover;}
+.homepage_head_span2_2{position:absolute; left:140px; top:34px; opacity: 0.6; font-size: 12px;
+color: #FFFFFF;}
+
+.homepage_head_span3{position:absolute; left:86px; top:54px; width:70%;white-space: nowrap;overflow: hidden;
+		text-overflow: ellipsis;font-size: 12px;opacity: 0.8;
+color: #FFFFFF;}
+.homepage_head_fans{font-size: 14px;color: #FFFFFF;position:absolute; margin-top:6px; left:28%; top:82px; height:16px; line-height: 16px;}
+.attention{height:16px; line-height: 16px;}
+.fans{margin-left:50px;}
+
+
+.homepage_head_tab{ margin-top:10px; padding-left:-5%; width:100%;height:60px; background: #FFFFFF;
+box-shadow: 0 0 0 0 #D9D9D9, inset 0 0 0 0 #D9D9D9;}
+.homePage_love{position:relative;float:left;width:33.33%;height:100%;}
+.homePage_comment{position:relative;text-align:center;float:left;width:33.33%;height:100%;}
+.homePage_collect{position:relative;text-align:center;float:left;width:33.33%;height:100%;}
+.homePage_love_text{margin-top:8px;display:inline-block;width:100%;text-align:center;font-size: 12px;
+color: #AAAAAA;}
+.homePage_love_number{display:inline-block;width:100%;text-align:center;font-size: 16px;
+color: #232326;}
+
+.homepage_scroll_head{font-size: 16px;margin-top:10px;
+color: #232326;height: 40px;line-height: 40px; width:100%;background: #FBFBFB;
+box-shadow: 0 0 0 0 #D9D9D9, inset 0 0 0 0 #D9D9D9; padding-left:3.5%;}
+
+.homepage_head_right{
+    position:absolute;
+    right:3.5%;
+    top:20px;
+    color: #FFFFFF;
+    font-size:16px;
+}
+
+.mui-table-view-chevron{margin-top:0px;}
+.mui-table-view:before{background-color:#FBFBFB;}
+.mui-scroll{}
+.mui-bar-nav{-webkit-box-shadow:0 0px 0px #5687E7}

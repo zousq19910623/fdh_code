@@ -1,0 +1,17 @@
+#likeList li{
+	
+}
+#likeList li img{
+	border-radius: 50%;
+	vertical-align:top;
+	height: 40px;
+	width: 40px;
+}
+#likeList li a{
+    margin: 0;
+    padding: 0;
+    line-height: 40px;
+    margin-left: 15px;
+    height: 40px;
+    display: inline-block;
+}

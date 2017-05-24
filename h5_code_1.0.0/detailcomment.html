@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html  id="detailcomment">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<!-- build:css css/detailcomment.min.css -->
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/detailcomment.css" />
+		<!-- endbuild -->
+		<title>帖子</title>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav mui-badge-primary">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">帖子</h1>
+			<a class="mui-icon mui-icon-more mui-pull-right optionBtn" href="#topPopover"></a>
+		</header>
+		<div id="pullrefresh" class="mui-content mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<div class="mui-card">
+					<div class="mui-card-header mui-card-media">
+						<img class="title_logo" src="" />
+						<div class="mui-media-body">
+							<span class="title_name"></span>
+							<p class="title_time"></p>
+							<div class="follow">关注</div>
+						</div>
+					</div>
+					<div id="index_li_img" class="index_li_img li_link">
+						<!--<img class="index_li_img_son" src="images/shuijiao.jpg" data-preview-src="" data-preview-group="1" />-->
+					</div>
+					<div class="mui-card-content" id="content">
+
+					</div>
+					<div class="mui-card-footer">
+						<ul>
+							<li class="mui-icon iconfont icon-map"></li>
+							<li class="location"></li>
+						</ul>
+					</div>
+				</div>
+				<div class="like clearfix">
+					<div class="likeNum"><span></span>喜欢</div>
+					<ul class="logoList">
+
+					</ul>
+				</div>
+
+				<div id="slider" class="mui-slider">
+
+					<a class="mui-control-item mui-active" href="javascript:void(0)" id="comment"><i>全部评论</i>&nbsp;<span class="commentNum"></span></a>
+					<!--数据列表-->
+
+					<ul id="data-list" class="mui-table-view mui-table-view-chevron">
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="re-report">
+			请勿重复举报
+		</div>
+		<ul class="footerNav mui-table-view">
+			<li class="likeBtn mui-table-view-cell">
+				<a href="javascript:void(0)"><i class="mui-icon iconfont icon-like"></i>喜欢</a>
+			</li>
+			<li class="commentBtn mui-table-view-cell">
+				<a href="javascript:void(0)"><i class="mui-icon iconfont icon-comment"></i>评论</a>
+			</li>
+			<li class="shareBtn mui-table-view-cell">
+				<a href="#share"><i class="mui-icon iconfont icon-Share"></i>分享</a>
+			</li>
+		</ul>
+		<div id="share" class="mui-popover mui-popover-bottom mui-popover-action ">
+			<!-- 可选择菜单 -->
+			<ul class="mui-table-view">
+				<li class="sort-style">分享到</li>
+				<li class="mui-table-view-cell pad-botm">
+					<div id="share-1">
+						<a href="#"><img src="images/WeChat service2_V6@2x.png" />
+							<p>微信</p>
+						</a>
+					</div>
+					<div id="share-2">
+						<a href="#"><img src="images/Wechat circle of friends_V6@2x.png" />
+							<p>朋友圈</p>
+						</a>
+					</div>
+					<div id="share-3">
+						<a href="#"><img src="images/QQ2_V6@2x.png" />
+							<p>QQ好友</p>
+						</a>
+					</div>
+					<div id="share-4">
+						<a href="#"><img src="images/SMS_V6@2x.png" />
+							<p>QQ空间</p>
+						</a>
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="#share">取消</a>
+				</li>
+			</ul>
+		</div>
+		<!--点击评论-->
+		<div id="myComment" class="mui-popover mui-popover-bottom mui-popover-action">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<div class="answer">回复</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<div class="deleteComment">删除</div>
+				</li>
+			</ul>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell cancel">
+					<a href="#myComment">取消</a>
+				</li>
+			</ul>
+		</div>
+		<div id="myDynamicId" class="mui-popover mui-popover-action mui-popover-bottom">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<div class="answer">回复</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<div class="reportComment">举报</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<div class="deleteComment">删除</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<div class="defriend">删除并加入黑名单</div>
+				</li>
+			</ul>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell cancel">
+					<a class="cancel" href="#myDynamicId">取消</a>
+				</li>
+			</ul>
+		</div>
+		<div id="otherComment" class="mui-popover mui-popover-action mui-popover-bottom">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<div class="answer">回复</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<div class="reportComment">举报</div>
+				</li>
+			</ul>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell cancel">
+					<a href="#otherComment">取消</a>
+				</li>
+			</ul>
+		</div>
+		<!--右上角弹出菜单-->
+		<div id="topPopover" class="mui-popover">
+			<div class="mui-popover-arrow"></div>
+			<div class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<ul class="mui-table-view">
+						<li id="Collection" class="mui-table-view-cell collect">
+							<a href="javascript:void(0)">收藏</a>
+						</li>
+
+						<li class="mui-table-view-cell report">
+							<a href="javascript:void(0)">举报</a>
+						</li>
+
+						<li class="mui-table-view-cell delete">
+							<a href="javascript:void(0)">删除 </a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="mask" class="mui-backdrop mui-backdrop-action mui-active" style="visibility:hidden;"></div>
+	</body>
+	<script src="http://cdn.bootcss.com/seajs/3.0.2/sea-debug.js"></script>
+	<script src="lib/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	<!-- build:js src/detailcomment.min.js -->
+	<script src="lib/mui.zoom.js"></script>
+	<script src="lib/mui.previewimage.js"></script>
+	<!-- endbuild -->
+	<script type="text/javascript">
+		seajs.config({
+			base: "./",
+			alias: {
+				
+			}
+		});
+		/**
+		 *加载入口模块
+		 */
+
+		seajs.use("src/detailcomment");
+	</script>
+
+</html>

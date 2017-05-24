@@ -1,0 +1,36 @@
+.box{width:100%;height:auto;margin-top:30px;}
+.test{position:relative; width:100%;padding:20px 30px 20px 30px;}
+
+.webuploader-container {
+	position: relative;
+}
+.webuploader-element-invisible {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px,1px,1px,1px);
+}
+.webuploader-pick {
+	position:absolute;
+	/*top:40px;*/
+	left:1%;
+	display: inline-block;
+	cursor: pointer;
+	/*background: #00b7ee;*/
+	background:url(../images/add_fatie@2x.png) 22px  19px  no-repeat;
+	border:1px dashed #ccc;
+	width:30%;
+	height:100px;
+	color: #fff;
+	text-align: center;
+	border-radius: 5px;
+	overflow: hidden;
+}
+/*.webuploader-pick-hover {
+	background: #00a2d4;
+}
+*/
+.webuploader-pick-disable {
+	opacity: 0.6;
+	pointer-events:none;
+}
+

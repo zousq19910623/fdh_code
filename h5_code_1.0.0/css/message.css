@@ -1,0 +1,14 @@
+.mui-table-view-cell{height:50px; position:relative; }
+.mui-table-view-cell img{width:25px; height:25px;}
+.li_txt{line-height: 40px; display:inline-block;
+font-size: 14px;
+top:4px;
+left:50px;
+position:absolute;
+color: #232326; }
+.mui-badge{margin-right:6%;background: #FF4B5E;}
+.love{display:none;}
+.comment{display:none;}
+.fans{display:none;}
+.system_notice{display:none;}
+

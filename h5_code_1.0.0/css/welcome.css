@@ -1,0 +1,62 @@
+body{background: #FBFBFB;}
+.mui-content{position:relative;background: #FBFBFB;}
+.title{font-size: 18px;color: #111100;  text-align: center;}
+.title_img{margin-left:auto; margin-right:auto; display: block; margin-top:16px;}
+.title_theme{margin-top:56px;font-size: 24px;color: #000000;  text-align: center;}
+.title_introduce{font-size: 13px;
+color: #66666F;margin-top:1.3%;
+ text-align: center;}
+.title_introduce2{font-size: 13px;
+color: #66666F;
+ text-align: center;}
+.title_introduce3{font-size: 13px;
+color: #66666F;
+position:fixed;
+left:0px;right:0px;
+margin-left:auto;margin-right:auto;
+bottom:83px;
+ text-align: center;
+ }
+ 
+ .title_introduce4{font-size: 13px;
+width:26.9%;
+background: #4286F5;
+border-radius: 2px;
+font-size: 14px;
+color: #FFFFFF;
+position:fixed;
+left:0px;right:0px;
+margin-left:auto;margin-right:auto;
+bottom:40px;
+ text-align: center;
+ }
+ 
+/* =============================welcome2====================*/
+ 
+.title_sex{margin-top:30px; padding-bottom: 20px !important; }
+.welcome_man{position:relative;background: #93D5FB;font-size: 18px;
+color: #FFFFFF; line-height: 30px; padding-left: 36px;border:1px solid #93D5FB;
+border-radius: 4px;width:100px; height:40px; display:inline-block; 
+margin-left:19.3%;}
+.welcome_man:active{background:#93D5FB !important; opacity: 0.5;}
+.title_circle1{position:absolute; right:12px; top:15px; width:8px; height: 8px; border-radius: 8px; 
+border: 2px solid #FFFFFF; background: #71B5DC;}
+.welcome_man img{position:absolute; left:20px; top:10px;}
+
+.welcome_woman{position:relative;background: #FF9797;font-size: 18px;
+color: #FFFFFF; line-height: 30px; padding-left: 36px;border:1px solid #FF9797;
+border-radius: 4px;width:100px; height:40px; display:inline-block; 
+}
+.welcome_woman:active{background:#E37C7C !important; opacity: 0.5;}
+.welcome_woman img{position:absolute; left:20px; top:10px;}
+.title_circle2{position:absolute; right:12px; top:15px; width:8px; height: 8px; border-radius: 8px; 
+border: 2px solid #FFFFFF; background: #E37C7C;}
+
+.title_img{border-radius: 96px;}
+
+
+.mui-picker{background: #FFFFFF !important;}
+.mui-poppicker-body{border-top:0px solid !important;}
+.mui-popup-backdrop{
+	z-index:1000  !important;
+}

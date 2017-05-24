@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>热门帖子</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="./css/mui.min.css">
+
+		<!-- build:css css/hotpost.min.css -->
+		<link rel="stylesheet" href="./css/hotpost.css">
+		<link rel="stylesheet" href="./css/common.css">
+		<link rel="stylesheet" href="./css/iconfont.css">
+		<!-- endbuild -->
+		
+		<style type="text/css">
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a id="back" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 id="title" class="mui-title">热门</h1>
+		</header>
+
+		<!--下拉刷新容器-->
+		<div id="pullrefresh" class="mui-content mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<!--数据列表-->
+				<ul class="mui-table-view mui-table-view-chevron">
+
+					<!--<li class="mui-table-view-cell" id="post-id-01">
+						<div class="index_li_head">
+							<img id="index_li_head_img1" class="index_li_head_img1" src="images/2222.jpg" />
+							<span id="head-user-name" class="index_li_head_span1 li_link">杨阿斯顿发送到发送到发生撒旦法撒旦法是</span>
+							<span class="index_li_head_span2 li_link">一小时前</span>
+
+							<a class="index_li_head_img2_a mui-icon mui-icon-arrowdown" style="display:inline-block; z-index: 10;" href="#topPopover"></a>
+						</div>
+
+						<div id="post-text-id" class="index_li_title li_link">杨阿斯顿发送到发送到发生撒旦法杨阿斯顿撒旦法杨阿斯顿撒旦法杨阿斯顿发送到发送到发生撒旦法</div>
+
+						<div id="index_li_img" class="index_li_img li_link">
+							<img class="index_li_img_son" src="images/shuijiao.jpg" data-preview-src="" data-preview-group="1" />
+							<img class="index_li_img_son" src="images/11.jpg" data-preview-src="" data-preview-group="1" />
+							<img class="index_li_img_son" src="images/shuijiao.jpg" data-preview-src="" data-preview-group="1" />
+						</div>
+
+						<div class="index_li_location">
+							<span class="mui-icon iconfont icon-like icon-map"></span>
+							<span>蛇口创业壹号</span>
+						</div>
+						<div class="index_li_foot">
+							<button type="button" class="mui-icon iconfont icon-like_y index_li_foot_love"> <span class="love-number">15463</span> </button>
+							<button type="button" class="mui-icon iconfont icon-comment index_li_foot_comment"> 5487</button>
+							<a href="#index_share"> <button type="button" class="mui-icon iconfont icon-Share index_li_foot_share"> 3487</button></a>
+						</div>
+
+					</li>
+					
+					<li class="mui-table-view-cell" id="post-id-01">
+						<div class="index_li_head">
+							<img id="index_li_head_img1" class="index_li_head_img1" src="images/2222.jpg" />
+							<span id="head-user-name" class="index_li_head_span1 li_link">杨阿斯顿发送到发送到发生撒旦法撒旦法是</span>
+							<span class="index_li_head_span2 li_link">一小时前</span>
+
+							<a class="index_li_head_img2_a mui-icon mui-icon-arrowdown" style="display:inline-block; z-index: 10;" href="#topPopover"></a>
+						</div>
+
+						<div id="post-text-id" class="index_li_title li_link">杨阿斯顿发送到发送到发生撒旦法杨阿斯顿撒旦法杨阿斯顿撒旦法杨阿斯顿发送到发送到发生撒旦法</div>
+
+						<div id="index_li_img" class="index_li_img li_link">
+							<img class="index_li_img_son" src="images/shuijiao.jpg" data-preview-src="" data-preview-group="1" />
+						</div>
+
+						<div class="index_li_location">
+							<span class="mui-icon iconfont icon-like icon-map"></span>
+							<span>蛇口创业壹号</span>
+						</div>
+						<div class="index_li_foot">
+							<button type="button" class="mui-icon iconfont icon-like_y index_li_foot_love"> <span class="love-number">15463</span> </button>
+							<button type="button" class="mui-icon iconfont icon-comment index_li_foot_comment"> 5487</button>
+							<a href="#index_share"> <button type="button" class="mui-icon iconfont icon-Share index_li_foot_share"> 3487</button></a>
+						</div>
+
+					</li>
+					
+					<li class="mui-table-view-cell" id="post-id-01">
+						<div class="index_li_head">
+							<img id="index_li_head_img1" class="index_li_head_img1" src="images/2222.jpg" />
+							<span id="head-user-name" class="index_li_head_span1 li_link">杨阿斯顿发送到发送到发生撒旦法撒旦法是</span>
+							<span class="index_li_head_span2 li_link">一小时前</span>
+
+							<a class="index_li_head_img2_a mui-icon mui-icon-arrowdown" style="display:inline-block; z-index: 10;" href="#topPopover"></a>
+						</div>
+
+						<div id="post-text-id" class="index_li_title li_link">杨阿斯顿发送到发送到发生撒旦法杨阿斯顿撒旦法杨阿斯顿撒旦法杨阿斯顿发送到发送到发生撒旦法</div>
+
+						<div id="index_li_img" class="index_li_img li_link">
+							
+						</div>
+
+						<div class="index_li_location">
+							<span class="mui-icon iconfont icon-like icon-map"></span>
+							<span>蛇口创业壹号</span>
+						</div>
+						<div class="index_li_foot">
+							<button type="button" class="mui-icon iconfont icon-like_y index_li_foot_love"> <span class="love-number">15463</span> </button>
+							<button type="button" class="mui-icon iconfont icon-comment index_li_foot_comment"> 5487</button>
+							<a href="#index_share"> <button type="button" class="mui-icon iconfont icon-Share index_li_foot_share"> 3487</button></a>
+						</div>
+
+					</li>
+					
+					<li id="post-id-two" class="mui-table-view-cell  li_delete">
+						<div class="li_delete_top">
+							<button type="button" class="mui-btn li_head_detele">
+			                                                      删除
+			                </button>
+						</div>
+						<div>
+							<div class="delete_img"><img src="images/image_delete.png" width="120px" height="120px" /></div>
+
+							<div class="detele_hint">原帖已删除</div>
+						</div>
+					</li>-->
+
+				</ul>
+			</div>
+		</div>
+		<a class="download">
+			<img class="icon_shouye" src="images/logo_fdlq@2x.png"/>
+			<button class="downBtn mui-button mui-btn-primary">立即下载</button>
+		</a>
+		<!--下拉框-->
+		<div id="topPopover" class="mui-popover">
+			<div class="mui-popover-arrow"></div>
+			<div class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<ul class="mui-table-view">
+						<li id="Collection" class="mui-table-view-cell">
+							<a href="#" id="hint_collection">收藏</a>
+						</li>
+
+						<li id="index_report_li" class="mui-table-view-cell index_report_li">
+							<a href="#">举报</a>
+						</li>
+
+						<li id="delete-btn" class="mui-table-view-cell">
+							<a href="#">删除 </a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script src="http://cdn.bootcss.com/seajs/3.0.2/sea.js"></script>
+		<script src="./lib/mui.min.js"></script>
+		
+		<!-- build:js src/hotpost.min.js -->
+		<script src="./lib/mui.zoom.js"></script>
+		<script src="./lib/mui.previewimage.js"></script>
+		<!-- endbuild -->
+		
+		<script>
+			seajs.config({
+				base: "./",
+				alias: {
+					//"lineChart": "lineChart.js"
+				}
+			});
+
+			// 加载入口模块
+			seajs.use("src/hotpost");
+		</script>
+	</body>
+
+</html>
