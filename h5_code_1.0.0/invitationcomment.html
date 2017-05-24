@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html id="comment">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		
+		<!-- build:css css/invitation.min.css -->
+		<link href="./css/webiaoqing.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="./css/webuploader.css">
+		<link rel="stylesheet" type="text/css" href="./css/diyUpload.css">
+		<link rel="stylesheet" type="text/css" href="./css/invitationcomment.css">
+		<link rel="stylesheet" href="./css/common.css">
+		<!-- endbuild -->
+		
+	</head>
+
+	<body>
+
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back  mui-pull-left"><span style="display: inline-block;padding-top:14px;">取消</span></a>
+			<h1 class="mui-title"></h1>
+			<a class="diyStart mui-pull-right diyButton" href="javascript:void(0)"><span  id="sendMassege" >发送</span></a>
+		</header>
+
+		<div class="mui-content">
+			
+			<div class="mui-input-row" style="margin: 10px 5px;">
+				<article id="form_article" contenteditable="true">说点什么...</article>
+				<span id="size">150</span>
+			</div>
+			
+			<div class="content-bar">
+				  <span id="face"><img src="images/expression_post@2x.png" width="24px" height="24px"/></span>
+			</div>
+
+			<div class="page_emotion box_swipe" id="page_emotion"  style="overflow-x: hidden;">
+				<dl id="list_emotion" class="list_emotion pt_10"></dl>
+				<!-- 表情框 -->
+				<dt><ol id="nav_emotion" class="nav_emotion"></ol></dt>
+				<!-- 分页提示点 -->
+			</div>
+
+		</div>
+
+        <script src="http://cdn.bootcss.com/seajs/3.0.2/sea.js"></script>
+		<script src="./lib/mui.min.js"></script>
+		<script type="text/javascript" src="./lib/jquery-2.1.3.min.js"></script>
+		<script type="text/javascript" src="./lib/webuploader.html5only.min.js"></script>
+	    <!-- build:js src/invitationcomment.min.js -->
+	    <script type="text/javascript" src="./src/diyUpload.js"></script>
+		<script type="text/javascript" src="./src/webiaoqin.js"></script>
+		<!-- endbuild -->
+		
+		<script>
+			seajs.config({
+				base: "./",
+				alias: {
+					//"lineChart": "lineChart.js"
+				}
+			});
+
+			// 加载入口模块
+			seajs.use("src/invitationcomment");
+			
+		</script>
+		
+		
+
+	</body>
+
+</html>

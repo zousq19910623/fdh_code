@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="./css/mui.min.css">
+			<link rel="stylesheet" type="text/css" href="./css/invitation.css">
+		<link rel="stylesheet" href="./css/common.css">
+			<!-- build:css css/invitation.min.css -->
+			<link href="./css/webiaoqing.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="./css/feedback.css" />
+			<!-- endbuild -->
+	</head>
+
+	<body class="mui-fullscreen">
+	
+	
+	<div id="feedback" style="display:block;" class="mui-page feedback">
+			
+			<header class="mui-bar mui-bar-nav">
+			<a id="back" class="mui-action-back  mui-pull-left"><span style="display: inline-block;padding-top:14px;">取消</span></a>
+			<h1 class="mui-title">发帖</h1>
+			<a class="diyStart mui-pull-right diyButton" href="javascript:void(0)"><span  id="sendMassege" >发送</span></a>
+		</header>
+			
+			<div class="mui-input-row" style="margin: 10px 5px;">
+				<!--<textarea id="form_article" rows="5" placeholder="说点什么呢....."></textarea>-->
+				<article id="form_article" contenteditable="true">说点什么...</article>
+				<span id="size">150</span>
+			</div>
+			
+			<div class="content-bar">
+				  <span id="face"><img src="images/expression_post@2x.png" width="24px" height="24px"/></span>
+				  <span id="photograph"><img src="images/photoes_post@2x.png" width="24px" height="24px"/></span>
+			</div>
+			
+		
+				<div id='image-list' class="row image-list"></div>
+			
+			
+			<div class="page_emotion box_swipe" id="page_emotion"  style="overflow-x: hidden;">
+				<dl id="list_emotion" class="list_emotion pt_10"></dl>
+				<!-- 表情框 -->
+				<dt><ol id="nav_emotion" class="nav_emotion"></ol></dt>
+				<!-- 分页提示点 -->
+			</div>
+			
+			
+		</div>
+
+	</body>
+	<script src="http://cdn.bootcss.com/seajs/3.0.2/sea.js"></script>
+	<script src="./lib/mui.min.js "></script>
+	<script type="text/javascript" src="./lib/jquery-2.1.3.min.js"></script>
+	<script type="text/javascript" src="./src/webiaoqin.js"></script>
+	<script src="./src/FLJPlugin.js"></script>
+	
+	<!--<script src="../js/mui.view.js "></script>-->
+
+		<script>
+			seajs.config({
+				base: "./",
+				alias: {
+					//"lineChart": "lineChart.js"
+				}
+			});
+
+			// 加载入口模块
+			seajs.use("src/invitation");
+			
+		</script>
+		
+	
+</html>
