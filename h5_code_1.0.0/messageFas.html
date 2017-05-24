@@ -1,0 +1,102 @@
+
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>新粉丝</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="./css/mui.min.css">
+	
+		<!-- build:css css/messageFas.min.css -->
+		<link rel="stylesheet" href="./css/common.css">
+		<link rel="stylesheet" href="./css/iconfont.css">
+		<link rel="stylesheet" href="./css/messageFas.css">
+        <!-- endbuild -->
+		
+	</head>
+
+   <body>
+		
+        <header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">新粉丝</h1>
+			<a href="#clear-notice" class="mui-pull-right clear-notice">清空</a>
+		</header>
+		
+		<!--下拉刷新容器-->
+		<div id="pullrefresh" class="mui-content mui-scroll-wrapper" style="display: block;">
+       
+			<div class="mui-scroll" >
+				<!--数据列表-->
+				<ul class="mui-table-view mui-table-view-chevron">
+					
+					<!--<li   id="0001" class="mui-table-view-cell " >
+						<div style="position:relative;">
+							<img  class="attetion_img" src="images/2222.jpg" />
+						    <span class="attetion_text1" >Verywang</span>
+						    <span class="attetion_text2" >08-17</span>
+						    <span class="attetion_text4">关注了你</span>
+						    <div class="attention">
+								<span class="mui-icon iconfont icon-attention_n"></span>
+								<p class="content1 text">加关注</p>
+							</div>
+						</div>
+					</li>
+					<li   id="0002" class="mui-table-view-cell " >
+						<div style="position:relative;">
+							<img  class="attetion_img" src="images/2222.jpg" />
+						    <span class="attetion_text1" >Verywang</span>
+						    <span class="attetion_text3">08-17</span>
+						    <span class="attetion_text2"  >关注了你</span>
+						    <div class="attention">
+								<span class="mui-icon iconfont icon-attention_y"></span>
+								<p class="content text">已关注</p>
+							</div>
+
+						</div>
+					</li>-->
+				</ul>
+			</div>
+		</div>
+		
+		<div id="fans-empty" class="mui-content fans-empty" style="display: none;">
+			<img src="images/attention_empty@2x.png"/>
+			<p>你收到的新粉丝通知会显示在这里<p>
+		</div>
+		
+		<div id="clear-notice" class="mui-popover mui-popover-action mui-popover-bottom">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a href="#">清空无效通知</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="#clear-notice" id="clear-all" class="clear-all">清空全部</a>
+				</li>
+			</ul>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a href="#clear-notice"><b>取消</b></a>
+				</li>
+			</ul>
+		</div>
+
+	    <script src="http://cdn.bootcss.com/seajs/3.0.2/sea.js"></script>
+	    <script src="./lib/mui.min.js"></script>
+		
+		
+
+		<script>
+		    seajs.config({
+				base: "./",
+				alias: {
+					//"lineChart": "lineChart.js"
+				}
+			});
+
+			// 加载入口模块
+			seajs.use("src/messageFas");
+		</script>
+	</body>
+
+</html>	

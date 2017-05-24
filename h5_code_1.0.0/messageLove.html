@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>收到喜欢</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="./css/mui.min.css">
+		
+		<!-- build:css css/messageLove.min.css -->
+		<link rel="stylesheet" href="./css/common.css">
+		<link rel="stylesheet" href="./css/iconfont.css">
+		<link rel="stylesheet" href="./css/report.css">
+		<link rel="stylesheet" href="./css/messageLove.css">
+        <!-- endbuild -->
+		
+	</head>
+
+   <body>
+		
+        <header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">收到喜欢</h1>
+			<a href="#clear-notice" class="mui-pull-right clear-notice">清空</a>
+		</header>
+		
+		<!--下拉刷新容器-->
+		<div id="pullrefresh" class="mui-content mui-scroll-wrapper" style="display: block;">
+			<div class="mui-scroll">
+				<!--数据列表-->
+				<ul class="mui-table-view mui-table-view-chevron">
+					<!--<li class="mui-table-view-cell" id="">
+						<div class="notice_li_head">
+							<img class="notice_li_head_img" src="images/header.jpg" />
+							<span class="system-notice">阿斗</span>
+							<span class="notice-date">08-17  15:10</span>
+							<p class="like-text">喜欢了你的帖子<span class="mui-icon iconfont icon-like_y"></span></p>
+						</div>
+						<div class="report_content_picture_txt">
+							<span class="report_content_li_img2"><img src="images/2222.jpg"></span>
+							<span class="report_content_li_txt2 mui-ellipsis">若评论的帖子有文子有文dfgdf 字有图片，则这样显片，则这样显示</span>
+						</div>
+					</li>
+					
+					<li class="mui-table-view-cell" id="">
+						<div class="notice_li_head">
+							<img class="notice_li_head_img" src="images/header.jpg" />
+							<span class="system-notice">阿斗</span>
+							<span class="notice-date">08-17  15:10</span>
+							<p class="like-text">喜欢了你的帖子<span class="mui-icon iconfont icon-like_y"></span></p>
+						</div>
+						<div class="invitation_comment_li">
+							<img src="images/2222.jpg" />
+							<img src="images/33.jpg" />
+							<img src="images/2222.jpg" />
+							<span class="apostrophe">
+						     	...
+						    </span>
+						</div>
+					</li>
+					
+					<li class="mui-table-view-cell" id="">
+						<div class="notice_li_head">
+							<img class="notice_li_head_img" src="images/header.jpg" />
+							<span class="system-notice">阿斗</span>
+							<span class="notice-date">08-17  15:10</span>
+							<button id="'+ obj[i].NoticeID +'" type="button" class="mui-btn mui-btn-blue li_head_detele">删除</button>
+							<p class="like-text">喜欢了你的帖子<span class="mui-icon iconfont icon-like_y"></span></p>
+						</div>
+						<div class="report_content_li">
+							<p class="person_text mui-ellipsis">若评论的帖子有文字有图片，文字有图片，若评论的帖子有文文字有图片，若评论的帖子有文若评论的帖子有文字有图片，则这样显示</p>
+						</div>
+					</li>-->
+				</ul>
+			</div>
+		</div>
+		
+		<div id="love-empty" class="mui-content love-empty" style="display: none;">
+			<img src="images/like_empty@2x.png"/>
+			<p>你收到的喜欢会显示在这里<p>
+		</div>
+		
+		<div id="clear-notice" class="mui-popover mui-popover-action mui-popover-bottom">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a href="#">清空无效通知</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="#clear-notice" id="clear-all" class="clear-all">清空全部</a>
+				</li>
+			</ul>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a href="#clear-notice"><b>取消</b></a>
+				</li>
+			</ul>
+		</div>
+		
+	    <script src="http://cdn.bootcss.com/seajs/3.0.2/sea.js"></script>
+	    <script src="./lib/mui.min.js"></script>
+		<script>
+		    seajs.config({
+				base: "./",
+				alias: {
+				}
+			});
+
+			// 加载入口模块
+			seajs.use("src/MessageLove");
+		</script>
+	</body>
+
+</html>
