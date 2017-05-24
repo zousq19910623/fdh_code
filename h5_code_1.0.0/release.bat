@@ -1,0 +1,1 @@
+rsync -avz --delete --password-file=passwd --exclude-from=./exclude.list ./build/ duan_hf@pm.fangliju.com::fdhWeb

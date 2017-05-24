@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="./css/mui.min.css">
+		<!-- build:css css/welcome.min.css -->
+		<link rel="stylesheet" href="./css/common.css">
+		<link rel="stylesheet" href="./css/welcome.css">
+		<!-- endbuild -->
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<!--<a id="back" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>-->
+			<h1 id="title" class="mui-title">欢迎 </h1>
+			<span  id="skip1" class="head_left"> 跳过</span>
+		</header>
+		
+		<div class="mui-content">
+		     <h3   class="title" style="margin-top:8%">Hi，<span class="name">周大丸子</span> </h3>
+		     <div > <img class="title_img" src="" width="96px" height="96px" /></div>
+		     <div class="title_theme" >欢迎来到房东汇</div>
+			 <div class="title_introduce" >在这里，您可以和来自全国各地的</div>
+			 <div class="title_introduce2" >房东无阻碍的交流</div>
+			 <div class="title_introduce3" >只需要一步完善个人资料</div>
+			 <a href="welcome2.html"><button id="next_button"  type="button" class="mui-btn mui-btn-primary  title_introduce4">下一步</button></a>
+			 
+		</div>
+	</body>
+
+	<script src="http://cdn.bootcss.com/seajs/3.0.2/sea.js"></script>
+	<script src="./lib/mui.min.js"></script>
+	<script src="./src/FLJPlugin.js"></script>
+	
+	 <script>
+	 	
+			seajs.config({
+				base: "./",
+				alias: {
+					//"lineChart": "lineChart.js"
+				}
+			});
+                      
+			// 加载入口模块
+			seajs.use("src/welcome");
+		</script>
+
+</html>

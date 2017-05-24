@@ -1,0 +1,21 @@
+{
+  "name": "fdlqWechat",
+  "version": "1.0.0",
+  "devDependencies": {
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.4.2",
+    "eslint-plugin-standard": "^2.0.1",
+    "grunt": "^1.0.1",
+    "grunt-cmd-concat": "^0.2.8",
+    "grunt-cmd-transport": "^0.5.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-csslint": "^2.0.0",
+    "grunt-contrib-cssmin": "^2.0.0",
+    "grunt-contrib-eslint": "0.0.5",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-uglify": "^2.1.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-usemin": "^3.1.1"
+  }
+}
